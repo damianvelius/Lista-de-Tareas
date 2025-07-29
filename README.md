@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Lista de Tareas - Challenge ForIT 2025
 
-## Getting Started
+Este proyecto es una aplicación básica de lista de tareas desarrollada como parte del proceso de ingreso a la **Academia ForIT 2025**.
 
-First, run the development server:
+## 🚀 Tecnologías utilizadas
+
+- [Next.js](https://nextjs.org/) con [TypeScript](https://www.typescriptlang.org/)
+- API Routes de Next.js (reemplazando un backend con Express)
+- React con Hooks para el manejo de estado
+- Fetch API para la comunicación cliente-servidor
+- Estilos con CSS básico
+
+## 📦 Estructura del proyecto
+
+Este proyecto utiliza **Next.js** para unificar el frontend y el backend en una sola aplicación. En lugar de tener carpetas separadas (`/frontend` y `/backend`), todo el código vive en la misma estructura:
+
+- `/app/` – Componentes y rutas del frontend
+- `/pages/api/tasks.ts` – Implementación de la API (`GET`, `POST`, `PUT`, `DELETE`)
+- `/components/` – Componentes como `TaskList`, `TaskItem`, `TaskForm`
+
+> ⚠️ Justificación: Next.js permite implementar backend y frontend en un mismo proyecto. Esto simplifica la arquitectura sin perder funcionalidad, y se considera una práctica estándar en muchos entornos modernos. Por eso no se crearon carpetas separadas como `/frontend` y `/backend`.
+
+## 🛠️ Cómo ejecutar la aplicación localmente
+
+1. Clonar el repositorio:
 
 ```bash
+git clone https://github.com/tu-usuario/nombre-del-repo.git
+cd nombre-del-repo
+Instalar dependencias:
+
+bash
+Copiar
+Editar
+npm install
+Crear archivo .env.local si necesitás configurar alguna variable de entorno (opcional).
+
+Iniciar el servidor de desarrollo:
+
+bash
+Copiar
+Editar
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Abrí http://localhost:3000 en tu navegador para ver la app.
+
+📸 Capturas de pantalla
+Agregá acá algunas imágenes de la app funcionando (crear, editar, eliminar tareas).
+
+✅ Funcionalidades implementadas
+ Crear nueva tarea
+
+ Mostrar lista de tareas
+
+ Editar tarea existente
+
+ Eliminar tarea
+
+ Manejo básico de errores
+
+🧠 Bonus opcionales (si aplican)
+ Filtros por tareas completadas / pendientes
+
+ Validación de formularios
+
+ Estilos con Tailwind o Bootstrap
+
+ Persistencia con sqlite3 (actualmente usa array en memoria)
+
+📄 Licencia
+Este proyecto fue realizado exclusivamente como parte del proceso de ingreso a ForIT 2025.
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+25/7
+instalacion de next, creacion de esqueleto de la interface de las task
+comiendo de la creacion de los metodos

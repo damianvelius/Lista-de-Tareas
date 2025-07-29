@@ -1,0 +1,2 @@
+index.ts      ← GET y POST para /api/tasks
+[id].ts       ← PUT y DELETE para /api/tasks/:id
