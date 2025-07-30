@@ -82,7 +82,7 @@ export default function Home() {
 
   return (
     <main className="container">
-      <h1 className="titleMain">Mi Lista de Tareas 📝</h1>
+      <h1 className="title-main">Mi Lista de Tareas 📝</h1>
       <TaskForm onAddTask={handleAddNewTask} />
       <TaskList
         tasks={tasks}

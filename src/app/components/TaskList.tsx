@@ -19,7 +19,7 @@ export default function TaskList({
   }
 
   return (
-    <div>
+    <section className="task-grid">
       {tasks.map((task) => (
         <TaskItem
           key={task.id}
@@ -28,6 +28,6 @@ export default function TaskList({
           onDelete={onDelete}
         />
       ))}
-    </div>
+    </section>
   );
 }

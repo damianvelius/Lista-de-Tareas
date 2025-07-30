@@ -1,8 +1,24 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0b1020;
+  --panel: #0f172a;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --ok: #22c55e;
+  --danger: #ef4444;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background: radial-gradient(
+    1200px 600px at 20% -10%,
+    #1e293b 0%,
+    #0b1020 60%
+  );
+  color: var(--text);
 }
 
 @theme inline {
@@ -36,15 +52,34 @@ body {
   gap: 30px;
   font-size: 2rem;
   color: #1f55a5;
-  border-radius: 0 0 30px 30px;
+  border-radius: 20px;
+  max-width: 1100px;
+  margin: 48px auto;
+  padding: 0 16px;
 }
 
-.titleMain {
+.title-main {
   font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .task-form {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
+  gap: 40px;
+}
+
+.task-form input {
+  border: #1f55a5 1px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.container-list-task {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(220px, 1fr));
+  gap: 12px;
 }

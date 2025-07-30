@@ -13,25 +13,22 @@ export default function TaskItem({
   onDelete,
 }: TaskItemProps) {
   return (
-    <div className={`task-item ${task.completed ? 'completed' : ''}`}>
-      <label className="task-info">
+    <article className={`task-item ${task.completed ? 'completed' : ''}`}>
+      <header className="task-head">
         <input
+          className="checkbox"
           type="checkbox"
           checked={task.completed}
           onChange={() => onToggleComplete(task.id)}
         />
-        <div>
-          <h3>{task.title}</h3>
-          <p>{task.description}</p>
-        </div>
-      </label>
-      <button
-        type="button"
-        onClick={() => onDelete(task.id)}
-        className="delete-btn"
-      >
-        Eliminar
-      </button>
-    </div>
+        <h3 className="task-title">{task.title}</h3>
+      </header>
+      {task.description && <p className="task-desc">{task.description}</p>}
+      <div className="task-actions">
+        <button className="btn btn-delete" onClick={() => onDelete(task.id)}>
+          Eliminar
+        </button>
+      </div>
+    </article>
   );
 }
