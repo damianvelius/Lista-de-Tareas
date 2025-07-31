@@ -22,4 +22,8 @@ Este proyecto utiliza **Next.js** para unificar el frontend y el backend en una 
 Este proyecto fue realizado exclusivamente como parte del proceso de ingreso a ForIT 2025.
 
 ```
-
+node
+npm i
+ZOD
+npm install zod
+```

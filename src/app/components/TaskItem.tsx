@@ -15,17 +15,17 @@ export default function TaskItem({
   return (
     <article className={`task-item ${task.completed ? 'completed' : ''}`}>
       <header className="task-head">
+        <h3 className="task-title">{task.title}</h3>
         <input
           className="checkbox"
           type="checkbox"
           checked={task.completed}
           onChange={() => onToggleComplete(task.id)}
         />
-        <h3 className="task-title">{task.title}</h3>
       </header>
       {task.description && <p className="task-desc">{task.description}</p>}
       <div className="task-actions">
-        <button className="btn btn-delete" onClick={() => onDelete(task.id)}>
+        <button className="btn-delete" onClick={() => onDelete(task.id)}>
           Eliminar
         </button>
       </div>
